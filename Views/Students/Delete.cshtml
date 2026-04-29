@@ -1,0 +1,34 @@
+@model Student_portal.Web.Models.Entities.Student
+
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<div class="page-header">
+    <div>
+        <p class="eyebrow">Students</p>
+        <h1>Delete Student</h1>
+    </div>
+    <a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body p-4">
+        <p class="lead">Are you sure you want to delete <strong>@Model.Name</strong>?</p>
+        <p class="text-muted">This will remove the student record from the portal.</p>
+
+        <dl class="row detail-list">
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">Phone</dt>
+            <dd class="col-sm-9">@Model.Phone</dd>
+        </dl>
+
+        <form asp-action="Delete" method="post" class="d-flex gap-2">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Cancel</a>
+        </form>
+    </div>
+</div>

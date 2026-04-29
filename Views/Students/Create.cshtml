@@ -1,0 +1,23 @@
+@model Student_portal.Web.Models.Entities.Student
+
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+<div class="page-header">
+    <div>
+        <p class="eyebrow">Students</p>
+        <h1>Create Student</h1>
+    </div>
+    <a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body p-4">
+        <partial name="_StudentForm" model="Model" />
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

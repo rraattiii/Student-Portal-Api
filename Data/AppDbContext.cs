@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-namespace student_portal.Web.Data
+using Student_portal.Web.Models.Entities;
+
+namespace Student_portal.Web.Data
 {
     public class AppDbContext : DbContext
     {
@@ -8,7 +10,7 @@ namespace student_portal.Web.Data
             
         }
 
-        public Dbset<Student> Students { get; set; }
+        public DbSet<Student> Students { get; set; }
 
 
     }

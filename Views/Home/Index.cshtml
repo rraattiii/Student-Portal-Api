@@ -1,8 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Student Portal";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero-panel">
+    <div>
+        <p class="eyebrow">Student Portal</p>
+        <h1>Organize student records without the spreadsheet chaos.</h1>
+        <p class="hero-copy">Keep names, contact details, and subscription status in one clean dashboard built with ASP.NET Core and Entity Framework.</p>
+        <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-primary btn-lg" asp-controller="Students" asp-action="Index">Open Dashboard</a>
+            <a class="btn btn-outline-secondary btn-lg" asp-controller="Students" asp-action="Create">Add First Student</a>
+        </div>
+    </div>
+</section>

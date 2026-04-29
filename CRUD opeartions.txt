@@ -1,0 +1,9 @@
+CRUD stand for :
+
+Create - 
+
+Read -
+
+Update -
+
+Delete -
